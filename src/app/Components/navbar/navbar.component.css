@@ -1,0 +1,35 @@
+.divNavBar{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  justify-items: center;
+
+
+}
+.items{
+  display: inline-flex;
+text-align: center;
+justify-content: center;
+align-items: center;
+justify-items: center;
+
+}
+.items>button{
+  padding: 10px;
+  margin-right: 10px;
+
+}
+li{
+  width: 150px;
+  height: 20px;
+  display: block;
+  background-color: rgb(165, 121, 132);
+  border: 1.5px solid rgb(14, 12, 12);
+  border-radius: 5px;
+  margin: 2px;
+  padding: 5px;
+  color: white;
+}
+li:hover{
+  background-color: rgb(182, 53, 118);
+}

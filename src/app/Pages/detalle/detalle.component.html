@@ -1,0 +1,22 @@
+
+
+
+<div class="divCampeon">
+
+  <h1 class="nombreCampeon">
+    {{campeon?.data.displayName}}
+  </h1>
+  <img src={{campeon?.data.displayIcon}} class="imgCampeon">
+  <p class="descCampeon">
+    {{campeon?.data.description}}
+  </p>
+</div>
+
+<div  class="habilidades">
+<div *ngFor="let habilidad of campeon?.data.abilities" class="habilidad">
+  <p>{{habilidad.displayName}}</p>
+  <img style="width: 50px;" src={{habilidad.displayIcon}}>
+  <p style="font-size:small;">{{habilidad.description }} </p>
+</div>
+</div>
+

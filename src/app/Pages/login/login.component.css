@@ -1,0 +1,41 @@
+.error{
+background-color: red;
+  }
+  .warning{
+    background-color: orange;
+  }
+  .texterrorDiv{
+    display: flex;
+  }
+  .textError{
+    width: 150px;
+    justify-content: center ;
+    align-items: center;
+    justify-items: center;
+    display: flex;
+    margin-left: 22%;
+  }
+.registro{
+  border: 2px solid rgb(251, 244, 244);
+ padding: 7px;
+display: inline-block;
+align-items: center;
+justify-content: center;
+text-align: center;
+display: block;
+background-color: rgb(232, 46, 46);
+border-radius: 3%;
+width: 270px;
+;
+}
+.divForm{
+  display: flex;
+  justify-content: center;
+  margin-top: 10%;
+}
+.registro>div{
+  padding: 5px;
+}
+.texto{
+  margin-right: 5px;
+}

@@ -1,0 +1,26 @@
+<div class="divForm">
+  <form [formGroup]="myForm" (ngSubmit)="registrarse()" class="registro" >
+
+    <div>
+      <label class="texto">Email</label>
+      <input type="email" formControlName="correo" />
+    </div>
+    <div *ngIf="myForm.get('correo')?.errors && myForm.get('correo')?.dirty">
+      <p *ngIf="myForm.get('correo')?.hasError('required')" class="textError">
+        El campo es obligatorio
+      </p>
+    </div>
+    <div>
+      <label class="texto"> Clave</label>
+      <input type="password" formControlName="clave" />
+      <div *ngIf="myForm.get('clave')?.errors && myForm.get('clave')?.dirty" class="texterrorDiv">
+        <p *ngIf="myForm.get('clave')?.hasError('required')" class="textError">
+         Ingrese su contraseña
+        </p>
+      </div>
+
+    </div>
+
+    <button type="submit" [disabled]="myForm.invalid">Enviar</button>
+  </form>
+  </div>
